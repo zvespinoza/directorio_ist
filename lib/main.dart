@@ -17,6 +17,7 @@ class MainApp extends StatelessWidget {
           foregroundColor: Colors.amber,
         ),
         body: ListView(
+          padding: EdgeInsets.all(10),
           children: <Widget>[
             ListTile(
               leading: Icon(Icons.person, color: Colors.blue),
@@ -24,18 +25,21 @@ class MainApp extends StatelessWidget {
               subtitle: Text("Desarrollo Aplicaciones Web"),
               trailing: Icon(Icons.star, color: const Color.fromARGB(255, 163, 208, 245)),
             ),
+            Divider(),
             ListTile(
               leading: Icon(Icons.person, color: Colors.blue),
               title: Text("Ing: Angel Novillo"),
               subtitle: Text("Desarrollo Aplicaciones Web"),
               trailing: Icon(Icons.star, color: const Color.fromARGB(255, 163, 208, 245)),
             ),
+            Divider(),
             ListTile(
               leading: Icon(Icons.person, color: Colors.blue),
               title: Text("Ing: Cecilia Naula"),
               subtitle: Text("Desarrollo Aplicaciones Web"),
               trailing: Icon(Icons.star, color: const Color.fromARGB(255, 163, 208, 245)),
             ),
+            Divider(),
           ],
         ),
       ),
