@@ -22,7 +22,7 @@ class _DocenteTileState extends State<DocenteTile> {
     final d = widget.docente; 
     
     return ListTile(
-      leading: const Icon(Icons.person, color: Colors.blue),
+      leading: Icon(Icons.person, color: Colors.blue),
       title: Text('${d.nivelEstudios} ${d.nombres} ${d.apellidos}'),
       subtitle: Text(d.carrera),
       trailing: IconButton(

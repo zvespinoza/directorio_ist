@@ -1,17 +1,29 @@
-class Docente {
-  final String nombres;
-  final String apellidos;
-  final String carrera;
-  final String nivelEstudios;
-  String cargo;
-  bool activo;
-
-
-  Docente(
-    {required this.nombres, 
-    required this.apellidos,  
-    required this.carrera, 
+import 'package:hive_ce/hive.dart';
+ 
+part 'docente.g.dart';
+ 
+@HiveType(typeId: 0)
+class Docente extends HiveObject {
+  @HiveField(0)
+  String nombres;
+ 
+  @HiveField(1)
+  String apellidos;
+ 
+  @HiveField(2)
+  String nivelEstudios;
+ 
+  @HiveField(3)
+  String carrera;
+ 
+  @HiveField(4)
+  bool esFavorito;
+ 
+  Docente({
+    required this.nombres,
+    required this.apellidos,
+    required this.carrera,
     required this.nivelEstudios,
-    this.cargo = "por definir",
-    this.activo = true});
+    this.esFavorito = false,
+  });
 }
